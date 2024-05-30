@@ -41,7 +41,8 @@ export default function Root() {
   ];
 
   return (
-    <main className="max-w-2xl mx-auto py-12 px-4">
+    <main className="bg-stone-100 dark:bg-neutral-900 dark:text-neutral-300 h-screen">
+      <div className="max-w-2xl mx-auto py-12 px-4">
       <section className="flex flex-col md:flex-row gap-8 items-center md:justify-between mb-12">
         <h1 className="text-2xl font-light">Yash Burshe</h1>
         <nav className="w-full md:w-auto">
@@ -72,7 +73,7 @@ export default function Root() {
 
       {sections.map((i, id) => (
         <section key={id} className="my-4 min-w-96">
-          <h2 className="text-lg font-medium border-b mb-2">{i.name}</h2>
+          <h2 className="text-lg font-medium border-b mb-2 dark:border-b-neutral-700">{i.name}</h2>
           <ul className="flex flex-col gap-2">
             {i.posts.map((j, id) => (
               <li key={id}>
@@ -83,6 +84,7 @@ export default function Root() {
           </ul>
         </section>
       ))}
+      </div>
     </main>
   );
 }
