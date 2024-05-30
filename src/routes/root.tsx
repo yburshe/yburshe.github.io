@@ -72,7 +72,7 @@ export default function Root() {
       </section>
 
       {sections.map((i, id) => (
-        <section key={id} className="my-4 min-w-96">
+        <section key={id} className="my-4">
           <h2 className="text-lg font-medium border-b mb-2 dark:border-b-neutral-700">{i.name}</h2>
           <ul className="flex flex-col gap-2">
             {i.posts.map((j, id) => (
