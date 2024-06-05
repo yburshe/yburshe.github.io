@@ -1,4 +1,9 @@
-import { IoDocument, IoLink, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import {
+  IoDocument,
+  IoLink,
+  IoLogoGithub,
+  IoLogoLinkedin,
+} from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 export default function Root() {
@@ -52,6 +57,7 @@ export default function Root() {
                   <Link
                     to={link.link}
                     className="flex items-center gap-1 hover:underline"
+                    target="_blank"
                   >
                     {link.icon}
                     {link.name}
@@ -71,7 +77,15 @@ export default function Root() {
           </nav>
         </section>
         <p className="flex gap-1">
-          Currently working on <Link className="flex items-center gap-1 hover:underline underline-offset-2" target="_blank" to="https://steam2csv.xyz">Steam2csv<IoLink/></Link>
+          Current hobby project: 
+          <Link
+            className="flex items-center gap-1 hover:underline underline-offset-2"
+            target="_blank"
+            to="https://steam2csv.xyz"
+          >
+            Steam2csv
+            <IoLink />
+          </Link>
         </p>
         {sections.map((i, id) => (
           <section key={id} className="my-4">
