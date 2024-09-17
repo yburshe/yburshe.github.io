@@ -12,6 +12,10 @@ export default function Root() {
       name: "Academics",
       posts: [
         {
+          name: "Northeastern University, Boston",
+          tag: "Master of Science in Computer Science"
+        },
+        {
           name: "NMIMS, Mumbai",
           tag: "Bachelor of Technology in Computer Science & Engineering (Cybersecurity)",
         },
