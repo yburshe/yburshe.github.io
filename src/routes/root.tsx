@@ -34,6 +34,27 @@ export default function Root() {
         },
       ],
     },
+    {
+      name: "Projects",
+      posts: [
+        {
+          name: "Where to find my projects",
+          tag: "All my projects are on my Github",
+        },
+        {
+          name: 'Steam2csv',
+          tag: 'Steam library to CSV converter. View any public user\'s Steam library and their playtime. Built using EJS and Express',
+        },
+        {
+          name: "EZ Meal Planner",
+          tag: "A convenient meal planner for the week. Built using Remix and PostgreSQL",
+        },
+        {
+          name: "ejs-blog",
+          tag: "A simple blogging framework website using EJS and pure JavaScript",
+        }
+      ]
+    }
   ];
 
   const links = [
@@ -50,7 +71,7 @@ export default function Root() {
   ];
 
   return (
-    <main className="bg-stone-100 dark:bg-neutral-900 dark:text-neutral-300 h-screen">
+    <main className="bg-stone-100 dark:bg-neutral-900 dark:text-neutral-300">
       <div className="max-w-2xl mx-auto py-12 px-4">
         <section className="flex flex-col md:flex-row gap-8 items-center md:justify-between mb-12">
           <h1 className="text-2xl font-light">Yash Burshe</h1>
@@ -80,7 +101,7 @@ export default function Root() {
             </ul>
           </nav>
         </section>
-        <p className="flex gap-1">
+        <p className="flex gap-1 p-2 border rounded-md bg-neutral-50">
           Current hobby project: 
           <Link
             className="flex items-center gap-1 hover:underline underline-offset-2"
