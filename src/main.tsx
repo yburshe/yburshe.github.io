@@ -5,11 +5,25 @@ import "./index.css";
 
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
+import Projects from "./routes/projects";
+import Header from "./components/Header";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Header />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Root />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+        errorElement: <ErrorPage />,
+      },
+    ],
   },
 ]);
 
