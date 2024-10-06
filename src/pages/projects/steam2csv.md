@@ -4,7 +4,7 @@ title: "Steam2CSV"
 description: "Download your entire Steam library as a .CSV file."
 date: 2023-07-01
 image:
-  url: "steam2csv_header.jpg"
+  url: "https://yashburshe.com/steam2csv_header.jpg"
   alt: "The Astro logo on a dark background with a pink glow."
 tags: []
 ---
